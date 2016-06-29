@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>Bootstrap 101 Template</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="cl-mcont">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="block-flat">
+                            <div class="content content_show">
+                                <form role="form" class="form-horizontal" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">姓名</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">手机号</label>
+                                            <div class="col-xs-5">
+                                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="请输入手机号">
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <input type="button" class="form-control btn-danger" id="btn_getVerify" value="获取验证码">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">验证码</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" name="verify" id="verify" placeholder="请输入验证码">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">业主类型</label>
+                                            <div class="col-xs-9">
+                                                <label class="radio-inline">
+                                                    <input type="radio" class="owner" name="owner" id="old_owner" value="0" checked="checked"> 新业主
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" class="owner" name="owner" id="new_owner" value="1"> 老业主
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group div_coupon">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">券号</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="coupon" name="coupon" placeholder="请输入券号">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="col-xs-3 control-label lable_text">是否同意</label>
+                                            <div class="col-xs-4">
+                                                <label class="checkbox-inline">
+                                                     <input type="checkbox" name="clause" id="clause"> 同意条款
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <a class="form-control" id="btn_caulse" style="color: #ef5121" data-toggle="modal" data-target="#myModal">查看《条款》</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <button type="button" class="btn btn-danger col-xs-12" id="btn_register" disabled="disabled">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 弹出层 条款-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top:height/2;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">关于XXX的条款：</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                            <li class="list-group-item">条款一</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <!-- <button type="button" class="btn btn-primary" id="btn_agree_clause">同意条款</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tool.js"></script>
+        <script>
+            // 判断是否注册过
+            var openid = "rommel";
+            // 提交发布信息
+            $.ajax({
+                type : "POST",
+                url : "lib/user_check.php",
+                data : {
+                    openid:openid
+                },
+                dataType:"json",
+                success : function(msg){
+                    if (msg.code == 1) {
+                        window.location = "nusers.php?openid="+openid;
+                        // 加这一句，防止跳转不了
+                        return false;
+                    }else if (msg.code == 2){
+                        window.location = "ousers.php?openid="+openid;
+                        // 加这一句，防止跳转不了
+                        return false;
+                    }
+                },
+                error : function(){
+                    alert("网络异常,请重试！");
+                    return;
+                }
+            })
+
+            // 新老业主的切换
+            $(".owner").change(function(){
+                var owner = $('input[name="owner"]:checked').val();
+                if (owner == 0) {
+                    $(".div_coupon").hide();
+                }else{
+                    $(".div_coupon").show();
+                }
+            });
+
+            // 获取验证码
+            $("#btn_getVerify").bind("click",function(){
+                var mobile = $("#mobile").val();
+                if (mobile == null || mobile == "") {
+                    alert("请输入手机号");
+                    return;
+                }
+                // 验证手机号是否合法
+                var ismobile = mobileCheck(mobile);
+                // 手机号非11位
+                if(!ismobile){
+                    alert("非法的手机号");
+                    return;
+                }
+                sendMessage(mobile);
+            })
+
+            // 是否同意条款
+            $("#clause").change(function(){
+                var clause = $('input[name="clause"]:checked').val();
+                if (clause == "on") {
+                    $("#btn_register").removeAttr('disabled');
+                }else{
+                    $("#btn_register").attr('disabled',true);
+                }
+            });
+
+            // 提交信息
+            // 查看条款
+            $("#btn_register").bind("click",function(){
+                var name = $("#name").val();
+                var mobile = $("#mobile").val();
+                var verify = $("#verify").val();
+                var owner = $('input[name="owner"]:checked').val();
+
+                var openid = "romme2";
+
+                if (owner == 0) {
+                    var check_params = name + "," + mobile + "," + verify;
+                }else{
+                    var coupon = $("#coupon").val();
+                    var check_params = name + "," + mobile + "," + verify + "," + coupon;
+                }
+
+                // 验证参数是否为空
+                if (paramsEmptyCheck(check_params)) {
+                    alert("信息不完整，请完善信息!!!");
+                    return;
+                }
+
+                // 根据不同的业主类型，调用不同的借口
+                if (owner == 0) {
+                    $.ajax({
+                        type : "POST",
+                        url : "lib/nuser_register.php",
+                        data : {
+                            openid:openid,
+                            name:name,
+                            mobile:mobile,
+                            verify:verify,
+                            owner:owner
+                        },
+                        dataType:"json",
+                        success : function(msg){
+                            alert(msg.info);
+                            if (msg.code == 0) {
+                              window.location = "ousrs.php?openid="+openid;
+                              // 加这一句，防止跳转不了
+                              return false;
+                            }else{
+                               //location.reload(true);
+                            }
+                            location.reload(true);
+                        },
+                        error : function(){
+                            alert("网络异常,请重试！");
+                            return;
+                        }
+                    })
+                }else{
+                    $.ajax({
+                        type : "POST",
+                        url : "lib/ouser_register.php",
+                        data : {
+                            openid:openid,
+                            name:name,
+                            mobile:mobile,
+                            verify:verify,
+                            owner:owner,
+                            coupon:coupon
+                        },
+                        dataType:"json",
+                        success : function(msg){
+                            alert(msg.info);
+                            
+                            if (msg.code == 0) {
+                              window.location = "nusers.php?openid="+openid;
+                              // 加这一句，防止跳转不了
+                              return false;
+                            }else{
+                            
+                               //location.reload(true);
+                            }
+                            location.reload(true);
+                        },
+                        error : function(){
+                            alert("网络异常,请重试！");
+                            return;
+                        }
+                    })
+                }
+            })
+            
+            
+        </script>
+    </body>
+</html>
+
